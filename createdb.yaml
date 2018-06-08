@@ -5,7 +5,7 @@
       ec2_group:
         name: dbsg
         description: an example EC2 group
-        vpc_id: vpc-23e6f758
+        vpc_id: vpc-0e9ec6c8ef1c5e670 | synechronvpc
         region: us-east-1
         rules:
           - proto: tcp
@@ -21,8 +21,8 @@
         name: dbsubnet
         description: My Fancy Ex Parrot Subnet Group
         subnets:
-          - subnet-1372a33d
-          - subnet-79c15b33
+          - subnet-03cd93652de21bfd2 | synechron-app1-weblayer-sn1
+          - subnet-07b7cc14cf16e273f | syenechron-app1-weblayer-sn2
       register: dbsubnet
     - debug:
         var: dbsubnet
